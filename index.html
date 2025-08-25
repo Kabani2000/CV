@@ -490,26 +490,176 @@
         }
         
         @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
+            body {
+                padding: 10px;
             }
             
-            .contact-info {
-                flex-direction: column;
-                gap: 15px;
+            .resume-container {
+                margin: 0;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 25px 20px;
+                text-align: center;
             }
             
             .name {
                 font-size: 2.2em;
+                margin-bottom: 8px;
             }
             
-            .sidebar, .main-section {
-                padding: 30px 20px;
+            .title {
+                font-size: 1.1em;
+                margin-bottom: 15px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+            }
+            
+            .contact-item {
+                font-size: 0.9em;
+                justify-content: center;
             }
             
             .professional-summary {
+                margin: 15px 20px;
+                padding: 20px;
+                border-radius: 12px;
+            }
+            
+            .professional-summary p {
+                font-size: 1.0em;
+                line-height: 1.6;
+                text-align: center;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .sidebar {
                 padding: 25px 20px;
-                margin: 20px;
+                border-right: none;
+                border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+            }
+            
+            .main-section {
+                padding: 25px 20px;
+            }
+            
+            .section-title {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+            
+            .skills-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .skill-item {
+                padding: 12px 15px;
+                font-size: 0.9em;
+                text-align: center;
+            }
+            
+            .languages {
+                gap: 8px;
+            }
+            
+            .language-item {
+                padding: 12px 15px;
+                border: 1px solid rgba(102, 126, 234, 0.15);
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(10px);
+                box-shadow: 
+                    0 4px 15px rgba(102, 126, 234, 0.08),
+                    0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+            }
+            
+            .job {
+                padding: 20px;
+                padding-left: 20px;
+                margin-bottom: 25px;
+                border-left: none;
+                border-top: 4px solid #667eea;
+            }
+            
+            .job::before {
+                display: none;
+            }
+            
+            .job-title {
+                font-size: 1.1em;
+                margin-bottom: 6px;
+            }
+            
+            .company {
+                font-size: 1.0em;
+                margin-bottom: 6px;
+            }
+            
+            .duration {
+                font-size: 0.85em;
+                margin-bottom: 12px;
+            }
+            
+            .job-description p {
+                font-size: 0.9em;
+                line-height: 1.6;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .name {
+                font-size: 1.8em;
+            }
+            
+            .title {
+                font-size: 1.0em;
+            }
+            
+            .professional-summary {
+                margin: 10px 15px;
+                padding: 15px;
+            }
+            
+            .professional-summary p {
+                font-size: 0.95em;
+            }
+            
+            .sidebar, .main-section {
+                padding: 20px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.2em;
+            }
+            
+            .skill-item {
+                font-size: 0.85em;
+                padding: 10px 12px;
+            }
+            
+            .job {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .job-title {
+                font-size: 1.0em;
+            }
+            
+            .job-description p {
+                font-size: 0.85em;
             }
         }
         
